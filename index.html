@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Registro</title>
+		<link  rel="icon"   href="Imagenes/descarga.jpg"/>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="index.js"></script>
+	</head>
+
+	<body id="cuerpo">
+		<div id="contenedor">
+		  	<div id="encabezado">Formulario de registro</div>
+		  	<div id="formulario">
+				<label><br><br>&nbsp;&nbsp;Primer Nombre:&nbsp;&nbsp;</label><br><br>
+				<input id="nombre" type="text" placeholder="Ingrese el primer nombre"><br>
+				<label><br>&nbsp;&nbsp;Primer Apellido:&nbsp;&nbsp;</label><br>
+				<input id="apellido" type="text" placeholder="Ingrese el primer apellido"><br>
+				<label><br>&nbsp;&nbsp;Dirección:&nbsp;&nbsp;</label><br>
+				<input id="direccion" type="text" placeholder="Ingrese la dirección"><br>
+				<label><br>&nbsp;&nbsp;Identificación:&nbsp;&nbsp;</label><br>
+				<input id="identificacion" type="text" placeholder="Ingrese la identificación" onkeypress="return valideKey(event);"><br>
+				<button id="registrar" onclick="registrar()" >Registrar</button><br>
+				<button id="limpiar" onclick="limpiar()" >Limpiar</button>
+				<a href="index.html"><input id="borrar" type="button" value="Borrar"></a><br>
+			</div>
+		  	<div id="contenido">
+				<div id="tabla1">
+					<table id="table1" border="1">
+						<thead>
+							<th>Identificacion</th><th>Nombre</th><th>Apellido</th><th>Direccion</th>
+						</thead>
+						<tbody id="usuarios1"></tbody>
+					</table>
+				</div>
+				<footer>
+					<hr>
+						<div style="background-color:rgb(0, 0, 0);color:rgb(255, 255, 255);padding:10px;">
+						<h5>CONTACTO</h5>
+						<label><b>Correo: </b>Ltorres56@cuc.edu.co</label><br>   
+						<label><b>Teléfono: </b>3004382304</label><br>   
+					</div>
+				</footer>
+			</div>
+        </div>
+	</body>
+</html>
+
